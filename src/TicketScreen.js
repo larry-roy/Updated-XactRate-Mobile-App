@@ -171,6 +171,7 @@ const Ticket = () => {
   const [warranty, setWarranty] = useState();
   const [contingencyProduct, setContingencyProduct] = useState();
   const [netLabourProfit, setNetLabourProfit] = useState();
+  const [breakEvenPrice, setBreakEvenPrice] = useState();
   const [employeeData, setEmployeeData] = useState([]);
   const [selectEmployees, setSelectEmployees] = useState();
   const [employeeHours, setEmployeeHours] = useState();
@@ -1181,6 +1182,7 @@ const Ticket = () => {
           setWarranty(newData.warranty_reserve);
           setContingencyProduct(newData.contingency_product);
           setNetLabourProfit(newData.net_labour_profit);
+          setBreakEvenPrice(newData.break_even_price);
         } else if (newData.success == false) {
           if (newData.status_code == 401) {
             const asyncStorageKeys = AsyncStorage.getAllKeys();
@@ -2825,7 +2827,7 @@ const Ticket = () => {
               keyboardType="numeric"
               placeholder="0"
               placeholderTextColor="#000000"
-              value={amount}
+              value={String(amount ? amount : 0)}
               onChangeText={total => {
                 setAmount(total);
                 setCustomProductErrorMessage('');

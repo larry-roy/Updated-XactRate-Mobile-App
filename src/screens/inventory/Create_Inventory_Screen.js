@@ -110,7 +110,7 @@ const Inventory_Screen = () => {
           Authorization: `Bearer ${userToken}`,
         },
         body: JSON.stringify({
-          id:id?id:null,
+          id: id ? id : null,
           title: fields.title,
           price: fields.price,
           quantity: fields.quantity,
@@ -216,7 +216,7 @@ const Inventory_Screen = () => {
         />
         <GlobalInput
           label="price"
-          value={state.price}
+          value={String(state.price)}
           onChangeText={value => {
             const numericValue = value.replace(/[^0-9]/g, '');
             setState(prevState => ({
@@ -230,7 +230,7 @@ const Inventory_Screen = () => {
 
         <GlobalInput
           label="Quantity"
-          value={state.quantity}
+          value={String(state.quantity)}
           onChangeText={value => {
             const numericValue = value.replace(/[^0-9]/g, '');
             setState(prevState => ({
@@ -244,7 +244,7 @@ const Inventory_Screen = () => {
 
         <GlobalInput
           label="Re Order Quantity"
-          value={state.re_order_quantity}
+          value={String(state.re_order_quantity)}
           onChangeText={value => {
             const numericValue = value.replace(/[^0-9]/g, '');
             setState(prevState => ({
