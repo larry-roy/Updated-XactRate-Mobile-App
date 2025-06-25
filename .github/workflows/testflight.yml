@@ -17,6 +17,12 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'
+          bundler-cache: true  # Automatically installs and caches gems
+
+      - name: Install Bundler and Gems
+        run: |
+          gem install bundler
+          bundle install
 
       - name: Install Fastlane
         run: gem install fastlane
@@ -35,7 +41,7 @@ jobs:
         run: |
           echo "${{ secrets.PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > profile.mobileprovision
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-
+          
           # Extract UUID from provisioning profile
           UUID=$(/usr/libexec/PlistBuddy -c "Print :UUID" /dev/stdin <<< $(security cms -D -i profile.mobileprovision))
           cp profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/$UUID.mobileprovision
@@ -52,6 +58,7 @@ jobs:
           FASTLANE_ITC_TEAM_ID: ${{ secrets.ITC_TEAM_ID }}
           FASTLANE_SKIP_UPDATE_CHECK: 'true'
           FASTLANE_HIDE_GITHUB_ISSUES: 'true'
+          FASTLANE_DISABLE_COLORS: 'true'  # Better for CI logs
         run: |
           mkdir -p fastlane
           bundle exec fastlane beta --verbose
