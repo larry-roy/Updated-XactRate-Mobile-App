@@ -29,7 +29,11 @@ jobs:
         run: |
           echo "${{ secrets.PROVISIONING_PROFILE_BASE64 }}" | base64 --decode > profile.mobileprovision
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
-          UUID=$(grep -a -o 'UUID.*' profile.mobileprovision | head -1 | sed -E 's/.*<string>(.*)<\/string>.*/\1/')
+          
+          # ✅ Correct UUID extraction
+          UUID=$(/usr/libexec/PlistBuddy -c "Print :UUID" /dev/stdin <<< $(/usr/bin/security cms -D -i profile.mobileprovision))
+
+          # ✅ Copy profile with correct UUID
           cp profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/$UUID.mobileprovision
 
       - name: Build and upload with fastlane
