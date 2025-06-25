@@ -42,5 +42,7 @@ jobs:
           APPSTORE_CONNECT_ISSUER_ID: ${{ secrets.APPSTORE_CONNECT_ISSUER_ID }}
           APPSTORE_CONNECT_PRIVATE_KEY: ${{ secrets.APPSTORE_CONNECT_PRIVATE_KEY }}
           CERTIFICATE_PASSWORD: ${{ secrets.CERTIFICATE_PASSWORD }}
+          FASTLANE_USER: ${{ secrets.APPLE_ID }}         # Add this line
+          
         run: |
           fastlane pilot upload --skip_waiting_for_build_processing true
