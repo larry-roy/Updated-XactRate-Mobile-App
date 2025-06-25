@@ -1,5 +1,5 @@
 lane :beta do
   # build, test, and upload to TestFlight
-  build_app(scheme: "YourAppScheme")
+  build_app(scheme: "XactRate")
   upload_to_testflight
 end
