@@ -23,11 +23,17 @@ jobs:
         with:
           node-version: 18
 
-      - name: 📦 Install Dependencies
-        run: npm install # or use yarn if you're using yarn
+      - name: 📦 Install JS dependencies
+        run: npm install
 
-      - name: 💎 Setup Ruby & Bundler
+      - name: 💎 Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.1 # or whatever version your local dev uses
+
+      - name: 💎 Install Bundler & Fastlane dependencies
         run: |
+          cd ios
           gem install bundler
           bundle install
 
