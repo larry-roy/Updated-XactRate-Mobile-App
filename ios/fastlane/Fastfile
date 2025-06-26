@@ -30,7 +30,13 @@ platform :ios do
     build_app(
       workspace: "XactRate.xcworkspace",
       scheme: "XactRate",
-      export_method: "app-store"
+      export_method: "app-store",
+      export_options: {
+      provisioningProfiles: {
+        "com.xactrate.bda" => "match AppStore com.xactrate.bda"
+      }
+    },
+    allowProvisioningUpdates: true
     )
 
     # ✅ Upload to TestFlight
