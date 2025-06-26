@@ -17,29 +17,21 @@ default_platform(:ios)
 
 platform :ios do
   before_all do
-    # ✅ Ensure the correct version of Xcode is selected
     xcode_select("/Applications/Xcode_15.4.app")
   end
 
   desc "Push a new beta build to TestFlight"
   lane :beta do
-    # ✅ Increment build number
     increment_build_number(xcodeproj: "XactRate.xcodeproj")
 
-    # ✅ Build the app
     build_app(
       workspace: "XactRate.xcworkspace",
       scheme: "XactRate",
       export_method: "app-store",
-      export_options: {
-      provisioningProfiles: {
-        "com.xactrate.bda" => "match AppStore com.xactrate.bda"
-      }
-    },
-    allowProvisioningUpdates: true
+      xcargs: "-allowProvisioningUpdates",
+      export_xcargs: "-allowProvisioningUpdates"
     )
 
-    # ✅ Upload to TestFlight
     upload_to_testflight
   end
 end
