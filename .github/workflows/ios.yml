@@ -15,20 +15,28 @@ jobs:
       APP_STORE_CONNECT_API_KEY: ${{ secrets.APP_STORE_CONNECT_API_KEY }}
 
     steps:
-      - name: Checkout Repo
+      - name: 📥 Checkout code
         uses: actions/checkout@v3
 
-      - name: Setup Ruby & Bundler
+      - name: 🧱 Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: 📦 Install Dependencies
+        run: npm install # or use yarn if you're using yarn
+
+      - name: 💎 Setup Ruby & Bundler
         run: |
           gem install bundler
           bundle install
 
-      - name: Install CocoaPods
+      - name: 📚 Install CocoaPods
         run: |
           cd ios
           pod install
 
-      - name: Run Fastlane
+      - name: 🚀 Run Fastlane
         run: |
           cd ios
           bundle exec fastlane beta
