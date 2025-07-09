@@ -40,6 +40,11 @@ jobs:
 
       - name: Set SENTRY_PROPERTIES env
         run: echo "SENTRY_PROPERTIES=ios/sentry.properties" >> $GITHUB_ENV
+
+      - name: Check sentry.properties
+        run: |
+          ls -la ios/sentry.properties
+          cat ios/sentry.properties
       
       - name: Setup SSH for Match
         run: |
