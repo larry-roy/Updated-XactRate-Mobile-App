@@ -66,10 +66,8 @@ jobs:
 
       - name: Create .env file and Run Fastlane
         env:
-          SENTRY_PROPERTIES: ${{ github.workspace }}/sentry.properties
+          SENTRY_DISABLE: true
         run: |
-          echo "Current directory: $(pwd)"
-          echo "SENTRY_PROPERTIES value: $SENTRY_PROPERTIES"
           cat > ios/fastlane/.env <<EOF
           APP_STORE_CONNECT_API_KEY_ID=${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
           APP_STORE_CONNECT_API_KEY_ISSUER_ID=${{ secrets.APP_STORE_CONNECT_API_KEY_ISSUER_ID }}
