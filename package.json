@@ -27,7 +27,7 @@
     "deprecated-react-native-prop-types": "^5.0.0",
     "link": "^1.5.1",
     "react": "18.2.0",
-    "react-native": "^0.79.5",
+    "react-native": "^0.71.19",
     "react-native-drawer": "^2.5.1",
     "react-native-exit-app": "^1.1.0",
     "react-native-gesture-handler": "^2.9.0",
