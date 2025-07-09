@@ -416,7 +416,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"$SENTRY_DISABLE\" == \"true\" ]; then\n    echo \"Sentry disabled via SENTRY_DISABLE environment variable\"\n    exit 0\nfi\n\nexport SENTRY_PROPERTIES=sentry.properties\n[[ $SENTRY_INCLUDE_NATIVE_SOURCES == \"true\" ]] && INCLUDE_SOURCES_FLAG=\"--include-sources\" || INCLUDE_SOURCES_FLAG=\"\"\n../node_modules/@sentry/cli/bin/sentry-cli debug-files upload \"$INCLUDE_SOURCES_FLAG\" \"$DWARF_DSYM_FOLDER_PATH\"\n";
+			shellScript = "if [ \"$SENTRY_DISABLE\" == \"true\" ]; then\n    echo \"Sentry disabled via SENTRY_DISABLE environment variable\"\n    exit 0\nfi\n\nif [ ! -f \"sentry.properties\" ] && [ ! -f \"../sentry.properties\" ]; then\n    echo \"No sentry.properties file found, skipping Sentry upload\"\n    exit 0\nfi\n\nexport SENTRY_PROPERTIES=sentry.properties\n[[ $SENTRY_INCLUDE_NATIVE_SOURCES == \"true\" ]] && INCLUDE_SOURCES_FLAG=\"--include-sources\" || INCLUDE_SOURCES_FLAG=\"\"\n../node_modules/@sentry/cli/bin/sentry-cli debug-files upload \"$INCLUDE_SOURCES_FLAG\" \"$DWARF_DSYM_FOLDER_PATH\"\n";
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -546,6 +546,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xactrate.bda;
 				PRODUCT_NAME = XactRate;
+				SENTRY_DISABLE = true;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -580,6 +581,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xactrate.bda;
 				PRODUCT_NAME = XactRate;
+				SENTRY_DISABLE = true;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
