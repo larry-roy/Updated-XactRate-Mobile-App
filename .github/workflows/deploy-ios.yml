@@ -65,6 +65,8 @@ jobs:
           echo "KEYCHAIN_PASSWORD=$KEYCHAIN_PASSWORD" >> $GITHUB_ENV
 
       - name: Create .env file and Run Fastlane
+        env:
+          SENTRY_PROPERTIES: ${{ github.workspace }}/sentry.properties
         run: |
           cat > ios/fastlane/.env <<EOF
           APP_STORE_CONNECT_API_KEY_ID=${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
