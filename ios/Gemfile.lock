@@ -132,12 +132,12 @@ GEM
       google-apis-core (>= 0.11.0, < 2.a)
     google-apis-storage_v1 (0.31.0)
       google-apis-core (>= 0.11.0, < 2.a)
-    google-cloud-core (1.8.0)
-      google-cloud-env (>= 1.0, < 3.a)
+    google-cloud-core (1.6.0)
+      google-cloud-env (~> 1.0)
       google-cloud-errors (~> 1.0)
     google-cloud-env (1.6.0)
       faraday (>= 0.17.3, < 3.0)
-    google-cloud-errors (1.5.0)
+    google-cloud-errors (1.4.0)
     google-cloud-storage (1.47.0)
       addressable (~> 2.8)
       digest-crc (~> 0.4)
@@ -173,7 +173,7 @@ GEM
     optparse (0.6.0)
     os (1.1.4)
     plist (3.7.2)
-    public_suffix (6.0.2)
+    public_suffix (5.0.5)
     rake (13.3.0)
     representable (3.2.0)
       declarative (< 0.1.0)
@@ -185,7 +185,7 @@ GEM
     ruby2_keywords (0.0.5)
     rubyzip (2.4.1)
     security (0.1.5)
-    signet (0.20.0)
+    signet (0.19.0)
       addressable (~> 2.8)
       faraday (>= 0.17.5, < 3.a)
       jwt (>= 1.5, < 3.0)
@@ -223,8 +223,13 @@ PLATFORMS
 
 DEPENDENCIES
   abbrev
+  dotenv
   fastlane (~> 2.228)
+  google-cloud-core (= 1.6.0)
+  google-cloud-errors (= 1.4.0)
   mutex_m
+  public_suffix (= 5.0.5)
+  signet (= 0.19.0)
 
 BUNDLED WITH
    2.6.9
