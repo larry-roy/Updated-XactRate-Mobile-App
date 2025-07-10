@@ -16,7 +16,6 @@ import Edit_Ticket from './src/EditTicket';
 import CustomDrawer from './src/Components/CustomDrawer';
 import ClientTickets from './src/screens/client tickets/ClientTickets';
 
-import * as Sentry from '@sentry/react-native';
 import {Dimensions} from 'react-native';
 import MobileInvoice from './src/MobileInvoice';
 import TicketDetail from './src/screens/ticket details/TicketDetailScreen';
@@ -24,10 +23,6 @@ import NAVIGATION_STRING_CONSTANTS from './src/navigation/NavigarionStringConsta
 import theme from './src/utils/theme';
 import Inventory_Screen from './src/screens/inventory/Inventory_Screen';
 import Create_Inventory_Screen from './src/screens/inventory/Create_Inventory_Screen';
-
-Sentry.init({
-  dsn: 'https://3d9b405424ad4224afcb9a0fb1aa2c3f@o4504920315789312.ingest.sentry.io/4504920323719168',
-});
 
 const Stack = createNativeStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -225,9 +220,9 @@ function App() {
           component={Inventory_Screen}
           options={{
             headerShown: true,
-            title: 'Inventory',              // ← Yahan screen title set karen
-            headerBackTitle: 'Go Back',     // ← Yahan back button label
-            headerBackTitleVisible: true,   // ← Ensure label is visible
+            title: 'Inventory',              
+            headerBackTitle: 'Go Back',     
+            headerBackTitleVisible: true,   
           }}
         />
         <Stack.Screen
@@ -241,4 +236,4 @@ function App() {
     </NavigationContainer>
   );
 }
-export default Sentry.wrap(App);
+export default App;

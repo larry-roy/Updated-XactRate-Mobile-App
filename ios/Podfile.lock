@@ -423,13 +423,13 @@ PODS:
     - React-Core
   - RNCAsyncStorage (1.24.0):
     - React-Core
-  - RNCPicker (2.11.0):
+  - RNCPicker (2.11.1):
     - React-Core
   - RNDateTimePicker (7.7.0):
     - React-Core
   - RNExitApp (1.1.0):
     - React
-  - RNGestureHandler (2.24.0):
+  - RNGestureHandler (2.27.1):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
   - RNReanimated (2.17.0):
@@ -459,19 +459,12 @@ PODS:
     - React-RCTText
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNScreens (3.37.0):
+  - RNScreens (4.11.1):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
     - React-RCTImage
-  - RNSentry (5.36.0):
-    - hermes-engine
-    - RCT-Folly (= 2021.07.22.00)
-    - React-Core
-    - React-hermes
-    - Sentry/HybridSDK (= 8.41.0)
   - RNSVG (12.5.1):
     - React-Core
-  - Sentry/HybridSDK (8.41.0)
   - SocketRocket (0.6.1)
   - Yoga (1.14.0)
   - YogaKit (1.18.1):
@@ -547,7 +540,6 @@ DEPENDENCIES:
   - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNReanimated (from `../node_modules/react-native-reanimated`)
   - RNScreens (from `../node_modules/react-native-screens`)
-  - "RNSentry (from `../node_modules/@sentry/react-native`)"
   - RNSVG (from `../node_modules/react-native-svg`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -566,7 +558,6 @@ SPEC REPOS:
     - fmt
     - libevent
     - OpenSSL-Universal
-    - Sentry
     - SocketRocket
     - YogaKit
 
@@ -659,8 +650,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-reanimated"
   RNScreens:
     :path: "../node_modules/react-native-screens"
-  RNSentry:
-    :path: "../node_modules/@sentry/react-native"
   RNSVG:
     :path: "../node_modules/react-native-svg"
   Yoga:
@@ -718,19 +707,17 @@ SPEC CHECKSUMS:
   ReactCommon: 9d5423a44441e73260000f780f209004e7a15678
   rn-fetch-blob: 25612b6d6f6e980c6f17ed98ba2f58f5696a51ca
   RNCAsyncStorage: b6410dead2732b5c72a7fdb1ecb5651bbcf4674b
-  RNCPicker: 124b4fb5859ba1a3fd53a91e16d1e7a0fc016e59
+  RNCPicker: da0f1c9411208c1ca52bc98383db54a06e0a3862
   RNDateTimePicker: 590f2000e4272050b98689cee6c8abc66c25bb22
   RNExitApp: 890cce29b4e01372c84b3b775f9a63f90d77de19
-  RNGestureHandler: ea1e2b6e796d766e36bcdd1e5e1cc6713661b089
+  RNGestureHandler: c2065517a0a36bba1ec1ed42c0a1ec78526f75d7
   RNReanimated: f9f8945aad05d259324869fb79ce30b75c6062da
-  RNScreens: c1a851e518284641160aa5af4894479773a6e719
-  RNSentry: abaee6c62b74da3a3e4edede07dfad55fff24815
+  RNScreens: bf6397aa344d1385af32efcf0396c937e72bb7e3
   RNSVG: d7cb8bd34550cf4c4fc7edd7ac627905e2b71f3f
-  Sentry: 54d0fe6c0df448497c8ed4cce66ccf7027e1823e
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: d4f5b037672e6b68ba484c7cf7fe6790122df792
   YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
 
-PODFILE CHECKSUM: 8d8b2f50141fec622dca31627a74b07d15dff7b7
+PODFILE CHECKSUM: 7b5e68fc8dd66905cdad9189b1d0e7c29f3fd56b
 
 COCOAPODS: 1.16.2

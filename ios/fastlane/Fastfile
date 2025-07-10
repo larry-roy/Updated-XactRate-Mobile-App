@@ -1,37 +1,72 @@
-# This file contains the fastlane.tools configuration
-# You can find the documentation at https://docs.fastlane.tools
-#
-# For a list of all available actions, check out
-#
-#     https://docs.fastlane.tools/actions
-#
-# For a list of all available plugins, check out
-#
-#     https://docs.fastlane.tools/plugins/available-plugins
-#
+# ios/fastlane/Fastfile
 
-# Uncomment the line if you want fastlane to automatically update itself
-# update_fastlane
+require 'dotenv'
+Dotenv.load('./fastlane/.env')
 
 default_platform(:ios)
 
 platform :ios do
-  before_all do
-    xcode_select("/Applications/Xcode_15.4.app")
-  end
-
-  desc "Push a new beta build to TestFlight"
+  desc "Build and upload a new beta version to TestFlight"
   lane :beta do
-    increment_build_number(xcodeproj: "XactRate.xcodeproj")
 
+    #xcodes(version: "16")
+
+    app_store_connect_api_key(
+      key_id: ENV["APP_STORE_CONNECT_API_KEY_ID"],
+      issuer_id: ENV["APP_STORE_CONNECT_API_KEY_ISSUER_ID"],
+      key_content: ENV["APP_STORE_CONNECT_API_KEY_CONTENT"],
+      is_key_content_base64: true
+    )
+
+    match(
+      type: "appstore",
+      readonly: is_ci,
+      app_identifier: ENV["BUNDLE_IDENTIFIER"]
+    )
+    
+    latest_build = latest_testflight_build_number(
+      app_identifier: ENV["BUNDLE_IDENTIFIER"]
+    )
+    new_build_number = latest_build + 1
+    
+    increment_build_number(
+      build_number: new_build_number,
+      xcodeproj: "XactRate.xcodeproj"
+    )
+
+    UI.message("Successfully set build number to #{new_build_number}")
+
+    # --- THIS IS THE DEFINITIVE FIX ---
+    # This block forces Xcode to use manual signing during the `archive` step itself.
     build_app(
       workspace: "XactRate.xcworkspace",
       scheme: "XactRate",
       export_method: "app-store",
-      xcargs: "-allowProvisioningUpdates",
-      export_xcargs: "-allowProvisioningUpdates"
+      
+      # Use `xcargs` to pass settings directly to the `xcodebuild archive` command
+      xcargs: {
+        "CODE_SIGN_STYLE" => "Manual",
+        "CODE_SIGN_IDENTITY" => "Apple Distribution",
+        "PROVISIONING_PROFILE_SPECIFIER" => "match AppStore #{ENV["BUNDLE_IDENTIFIER"]}",
+        "build_system" => "new",
+        "COMPILER_INDEX_STORE_ENABLE" => "NO",
+        "ENABLE_USER_SCRIPT_SANDBOXING" => "NO"
+      },
+
+      # The `export_options` are still needed for the `export` step
+      export_options: {
+        method: "app-store",
+        signingStyle: "manual",
+        provisioningProfiles: {
+          ENV["BUNDLE_IDENTIFIER"] => "match AppStore #{ENV["BUNDLE_IDENTIFIER"]}"
+        }
+      }
     )
 
-    upload_to_testflight
+    upload_to_testflight(
+      skip_waiting_for_build_processing: true
+    )
+    
+    UI.success("🚀 Successfully built and uploaded to TestFlight! 🚀")
   end
 end

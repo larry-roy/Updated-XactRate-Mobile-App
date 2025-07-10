@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* XactRateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* XactRateTests.m */; };
+		134F25A8B30E373B6FE521A5 /* libPods-XactRate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DDB33B333463F5F43013C8 /* libPods-XactRate.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		56F53A9DB63E7DB96D951870 /* libPods-XactRate-XactRateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 34482B73B4E32B8146A6EF88 /* libPods-XactRate-XactRateTests.a */; };
+		25BFC89CA547890D7FF7B62B /* libPods-XactRate-XactRateTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D3BEE4DBE40E74B01442AC6 /* libPods-XactRate-XactRateTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		BFF5AF29FCEC96CE6B3D3DEF /* libPods-XactRate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4553B9AF830EFE54954AA1E8 /* libPods-XactRate.a */; };
 		EA2CF3462A26253400C653B4 /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA2CF3402A26253200C653B4 /* DMSans-Regular.ttf */; };
 		EA2CF3472A26253400C653B4 /* DMSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA2CF3412A26253200C653B4 /* DMSans-Italic.ttf */; };
 		EA2CF3482A26253400C653B4 /* DMSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA2CF3422A26253200C653B4 /* DMSans-Medium.ttf */; };
@@ -42,13 +42,13 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = XactRate/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = XactRate/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = XactRate/main.m; sourceTree = "<group>"; };
-		2C5DA7EE7394EEBA976257A0 /* Pods-XactRate-XactRateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XactRate-XactRateTests.debug.xcconfig"; path = "Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests.debug.xcconfig"; sourceTree = "<group>"; };
-		34482B73B4E32B8146A6EF88 /* libPods-XactRate-XactRateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XactRate-XactRateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4097D0D31B3AD8C35E3654FE /* Pods-XactRate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XactRate.debug.xcconfig"; path = "Target Support Files/Pods-XactRate/Pods-XactRate.debug.xcconfig"; sourceTree = "<group>"; };
-		4553B9AF830EFE54954AA1E8 /* libPods-XactRate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XactRate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D0724B6CC96670969FCD8B6 /* Pods-XactRate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XactRate.release.xcconfig"; path = "Target Support Files/Pods-XactRate/Pods-XactRate.release.xcconfig"; sourceTree = "<group>"; };
+		2D3BEE4DBE40E74B01442AC6 /* libPods-XactRate-XactRateTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XactRate-XactRateTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5314BC8C30CB3411D3E3A36C /* Pods-XactRate-XactRateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XactRate-XactRateTests.release.xcconfig"; path = "Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests.release.xcconfig"; sourceTree = "<group>"; };
+		5953546D1CEAC4C8B3D30F54 /* Pods-XactRate-XactRateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XactRate-XactRateTests.debug.xcconfig"; path = "Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = XactRate/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9D163340906A1EFE8B68B3D7 /* Pods-XactRate-XactRateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XactRate-XactRateTests.release.xcconfig"; path = "Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests.release.xcconfig"; sourceTree = "<group>"; };
+		877CD8FBDC4D060BAB4A32E5 /* Pods-XactRate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XactRate.debug.xcconfig"; path = "Target Support Files/Pods-XactRate/Pods-XactRate.debug.xcconfig"; sourceTree = "<group>"; };
+		B4DDB33B333463F5F43013C8 /* libPods-XactRate.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XactRate.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F6E784989FD16AAA927E8D /* Pods-XactRate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XactRate.release.xcconfig"; path = "Target Support Files/Pods-XactRate/Pods-XactRate.release.xcconfig"; sourceTree = "<group>"; };
 		EA2CF3402A26253200C653B4 /* DMSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DMSans-Regular.ttf"; path = "../src/assets/fonts/DMSans-Regular.ttf"; sourceTree = "<group>"; };
 		EA2CF3412A26253200C653B4 /* DMSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DMSans-Italic.ttf"; path = "../src/assets/fonts/DMSans-Italic.ttf"; sourceTree = "<group>"; };
 		EA2CF3422A26253200C653B4 /* DMSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DMSans-Medium.ttf"; path = "../src/assets/fonts/DMSans-Medium.ttf"; sourceTree = "<group>"; };
@@ -63,7 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56F53A9DB63E7DB96D951870 /* libPods-XactRate-XactRateTests.a in Frameworks */,
+				25BFC89CA547890D7FF7B62B /* libPods-XactRate-XactRateTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFF5AF29FCEC96CE6B3D3DEF /* libPods-XactRate.a in Frameworks */,
+				134F25A8B30E373B6FE521A5 /* libPods-XactRate.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,8 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				4553B9AF830EFE54954AA1E8 /* libPods-XactRate.a */,
-				34482B73B4E32B8146A6EF88 /* libPods-XactRate-XactRateTests.a */,
+				B4DDB33B333463F5F43013C8 /* libPods-XactRate.a */,
+				2D3BEE4DBE40E74B01442AC6 /* libPods-XactRate-XactRateTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,10 +158,10 @@
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4097D0D31B3AD8C35E3654FE /* Pods-XactRate.debug.xcconfig */,
-				5D0724B6CC96670969FCD8B6 /* Pods-XactRate.release.xcconfig */,
-				2C5DA7EE7394EEBA976257A0 /* Pods-XactRate-XactRateTests.debug.xcconfig */,
-				9D163340906A1EFE8B68B3D7 /* Pods-XactRate-XactRateTests.release.xcconfig */,
+				877CD8FBDC4D060BAB4A32E5 /* Pods-XactRate.debug.xcconfig */,
+				C5F6E784989FD16AAA927E8D /* Pods-XactRate.release.xcconfig */,
+				5953546D1CEAC4C8B3D30F54 /* Pods-XactRate-XactRateTests.debug.xcconfig */,
+				5314BC8C30CB3411D3E3A36C /* Pods-XactRate-XactRateTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -173,12 +173,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "XactRateTests" */;
 			buildPhases = (
-				40E0597BBFE3029E5698D6E5 /* [CP] Check Pods Manifest.lock */,
+				30B444E743BB22EB08AF07A6 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				E6202EFDC91E0191D838841C /* [CP] Embed Pods Frameworks */,
-				35C79A28F1C2B3F45A7B0D86 /* [CP] Copy Pods Resources */,
+				4DC3407F4E98EE988D445AA9 /* [CP] Embed Pods Frameworks */,
+				56C3A6E353A43F1844465F1D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,15 +194,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "XactRate" */;
 			buildPhases = (
-				44CB40BDC4DE18B7295BA6E9 /* [CP] Check Pods Manifest.lock */,
+				67E31475CFFA9EF1C4114609 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				E5E1FBA956A44874B70952BD /* Upload Debug Symbols to Sentry */,
-				AB2B870DFB68E4F151C116CC /* [CP] Embed Pods Frameworks */,
-				BBC4FCB7E9C1D748157AF18A /* [CP] Copy Pods Resources */,
+				04908BF5FEFD19E52F3D92AD /* [CP] Embed Pods Frameworks */,
+				4346FA9100511562A55CAEA5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -290,26 +289,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export SENTRY_PROPERTIES=sentry.properties\nexport EXTRA_PACKAGER_ARGS=\"--sourcemap-output $DERIVED_FILE_DIR/main.jsbundle.map\"\nset -e\n\nWITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT \\\"../node_modules/@sentry/cli/bin/sentry-cli react-native xcode $REACT_NATIVE_XCODE\\\"\"\n\n/bin/sh ../node_modules/@sentry/react-native/scripts/collect-modules.sh\n";
+			shellScript = "#export SENTRY_PROPERTIES=sentry.properties\n#export EXTRA_PACKAGER_ARGS=\"--sourcemap-output $DERIVED_FILE_DIR/main.jsbundle.map\"\n#set -e\n\n#WITH_ENVIRONMENT=\"../node_modules/react-native/scripts/xcode/with-environment.sh\"\n#REACT_NATIVE_XCODE=\"../node_modules/react-native/scripts/react-native-xcode.sh\"\n\n#/bin/sh -c \"$WITH_ENVIRONMENT \\\"../node_modules/@sentry/cli/bin/sentry-cli react-native xcode $REACT_NATIVE_XCODE\\\"\"\n\n#/bin/sh ../node_modules/@sentry/react-native/scripts/collect-modules.sh\nset -e\n\nWITH_ENVIRONMENT=\"$REACT_NATIVE_PATH/scripts/xcode/with-environment.sh\"\nREACT_NATIVE_XCODE=\"$REACT_NATIVE_PATH/scripts/react-native-xcode.sh\"\n\n/bin/sh -c \"$WITH_ENVIRONMENT $REACT_NATIVE_XCODE\"\n\n";
 		};
-		35C79A28F1C2B3F45A7B0D86 /* [CP] Copy Pods Resources */ = {
+		04908BF5FEFD19E52F3D92AD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-XactRate/Pods-XactRate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-XactRate/Pods-XactRate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XactRate/Pods-XactRate-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		40E0597BBFE3029E5698D6E5 /* [CP] Check Pods Manifest.lock */ = {
+		30B444E743BB22EB08AF07A6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -331,7 +330,58 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		44CB40BDC4DE18B7295BA6E9 /* [CP] Check Pods Manifest.lock */ = {
+		4346FA9100511562A55CAEA5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XactRate/Pods-XactRate-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XactRate/Pods-XactRate-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XactRate/Pods-XactRate-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DC3407F4E98EE988D445AA9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		56C3A6E353A43F1844465F1D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67E31475CFFA9EF1C4114609 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -351,71 +401,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB2B870DFB68E4F151C116CC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XactRate/Pods-XactRate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XactRate/Pods-XactRate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XactRate/Pods-XactRate-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		BBC4FCB7E9C1D748157AF18A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XactRate/Pods-XactRate-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XactRate/Pods-XactRate-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XactRate/Pods-XactRate-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		E5E1FBA956A44874B70952BD /* Upload Debug Symbols to Sentry */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Upload Debug Symbols to Sentry";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\nexport SENTRY_PROPERTIES=sentry.properties\n[[ $SENTRY_INCLUDE_NATIVE_SOURCES == \"true\" ]] && INCLUDE_SOURCES_FLAG=\"--include-sources\" || INCLUDE_SOURCES_FLAG=\"\"\n../node_modules/@sentry/cli/bin/sentry-cli debug-files upload \"$INCLUDE_SOURCES_FLAG\" \"$DWARF_DSYM_FOLDER_PATH\"\n";
-		};
-		E6202EFDC91E0191D838841C /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XactRate-XactRateTests/Pods-XactRate-XactRateTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -470,7 +455,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2C5DA7EE7394EEBA976257A0 /* Pods-XactRate-XactRateTests.debug.xcconfig */;
+			baseConfigurationReference = 5953546D1CEAC4C8B3D30F54 /* Pods-XactRate-XactRateTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 3Y5BDMF3QL;
@@ -498,7 +483,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D163340906A1EFE8B68B3D7 /* Pods-XactRate-XactRateTests.release.xcconfig */;
+			baseConfigurationReference = 5314BC8C30CB3411D3E3A36C /* Pods-XactRate-XactRateTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -523,12 +508,12 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4097D0D31B3AD8C35E3654FE /* Pods-XactRate.debug.xcconfig */;
+			baseConfigurationReference = 877CD8FBDC4D060BAB4A32E5 /* Pods-XactRate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 329V794RM4;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = XactRate/Info.plist;
@@ -546,6 +531,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xactrate.bda;
 				PRODUCT_NAME = XactRate;
+				SENTRY_DISABLE = true;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -558,12 +544,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5D0724B6CC96670969FCD8B6 /* Pods-XactRate.release.xcconfig */;
+			baseConfigurationReference = C5F6E784989FD16AAA927E8D /* Pods-XactRate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CURRENT_PROJECT_VERSION = 9;
+				CURRENT_PROJECT_VERSION = 11;
 				DEVELOPMENT_TEAM = 329V794RM4;
 				INFOPLIST_FILE = XactRate/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = XactRate;
@@ -580,6 +566,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.xactrate.bda;
 				PRODUCT_NAME = XactRate;
+				SENTRY_DISABLE = true;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
@@ -623,7 +610,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -659,10 +646,7 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
@@ -702,7 +686,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -733,10 +717,7 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
