@@ -423,9 +423,9 @@ PODS:
     - React-Core
   - RNCAsyncStorage (1.24.0):
     - React-Core
-  - RNCPicker (2.11.0):
+  - RNCPicker (2.11.1):
     - React-Core
-  - RNDateTimePicker (7.6.3):
+  - RNDateTimePicker (7.7.0):
     - React-Core
   - RNExitApp (1.1.0):
     - React
@@ -707,8 +707,8 @@ SPEC CHECKSUMS:
   ReactCommon: 9d5423a44441e73260000f780f209004e7a15678
   rn-fetch-blob: 25612b6d6f6e980c6f17ed98ba2f58f5696a51ca
   RNCAsyncStorage: b6410dead2732b5c72a7fdb1ecb5651bbcf4674b
-  RNCPicker: 124b4fb5859ba1a3fd53a91e16d1e7a0fc016e59
-  RNDateTimePicker: b43e41f10305dde521c0ab1370d7454979ec4287
+  RNCPicker: da0f1c9411208c1ca52bc98383db54a06e0a3862
+  RNDateTimePicker: 590f2000e4272050b98689cee6c8abc66c25bb22
   RNExitApp: 890cce29b4e01372c84b3b775f9a63f90d77de19
   RNGestureHandler: c2065517a0a36bba1ec1ed42c0a1ec78526f75d7
   RNReanimated: f9f8945aad05d259324869fb79ce30b75c6062da

@@ -15,7 +15,6 @@ import NAVIGATION_STRING_CONSTANTS from '../../navigation/NavigarionStringConsta
 import BottomTabBar from '../../Components/BottomTabBar';
 import STRING_CONSTANTS from '../../strings/strings';
 import DashboardBox from '../../Components/DashboardBox';
-import SlidingBanner from '../../Components/SlidingBanner';
 import ClientList from './components/ClientList';
 import TicketList from './components/TicketList';
 import {useOrientation} from '../../utils/orientation';
@@ -76,7 +75,6 @@ const Home = () => {
           <View style={styles.dashboardContainer}>
             <DashboardBox />
           </View>
-          {/* <SlidingBanner /> */}
           <BannerComponent navigation={navigation} />
         </View>
         <ClientList clients={clients} navigation={navigation} />
