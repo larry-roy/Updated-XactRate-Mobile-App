@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* XactRateTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* XactRateTests.m */; };
-		05754D6F2E1FD329002F424E /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 05754D6E2E1FD328002F424E /* main.jsbundle */; };
 		134F25A8B30E373B6FE521A5 /* libPods-XactRate.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4DDB33B333463F5F43013C8 /* libPods-XactRate.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
@@ -37,7 +36,6 @@
 		00E356EE1AD99517003FC87E /* XactRateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XactRateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* XactRateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XactRateTests.m; sourceTree = "<group>"; };
-		05754D6E2E1FD328002F424E /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* XactRate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XactRate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = XactRate/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = XactRate/AppDelegate.mm; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 		13B07FAE1A68108700A75B9A /* XactRate */ = {
 			isa = PBXGroup;
 			children = (
-				05754D6E2E1FD328002F424E /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.mm */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
@@ -267,7 +264,6 @@
 				EA2CF3462A26253400C653B4 /* DMSans-Regular.ttf in Resources */,
 				EA2CF3472A26253400C653B4 /* DMSans-Italic.ttf in Resources */,
 				EA2CF3482A26253400C653B4 /* DMSans-Medium.ttf in Resources */,
-				05754D6F2E1FD329002F424E /* main.jsbundle in Resources */,
 				EA2CF3492A26253400C653B4 /* DMSans-BoldItalic.ttf in Resources */,
 				EA2CF34A2A26253400C653B4 /* DMSans-Bold.ttf in Resources */,
 				EA2CF34B2A26253400C653B4 /* DMSans-MediumItalic.ttf in Resources */,
@@ -650,10 +646,7 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 			};
@@ -724,10 +717,7 @@
 					"-DFOLLY_MOBILE=1",
 					"-DFOLLY_USE_LIBCPP=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
