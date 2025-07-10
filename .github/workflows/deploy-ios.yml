@@ -64,14 +64,13 @@ jobs:
           security set-keychain-settings -t 3600 -l "$KEYCHAIN_NAME"
           echo "KEYCHAIN_PASSWORD=$KEYCHAIN_PASSWORD" >> $GITHUB_ENV
 
-
-      # - name: Disable Sentry for CI
-      #   run: |
-      #     echo "# Sentry disabled for CI builds" > sentry.properties
-      #     echo "defaults.url=https://sentry.io/" >> sentry.properties
-      #     echo "defaults.org=disabled" >> sentry.properties
-      #     echo "defaults.project=disabled" >> sentry.properties
-      #     echo "auth.token=disabled" >> sentry.properties
+      - name: Disable Sentry for CI
+        run: |
+          echo "# Sentry disabled for CI builds" > sentry.properties
+          echo "defaults.url=https://sentry.io/" >> sentry.properties
+          echo "defaults.org=disabled" >> sentry.properties
+          echo "defaults.project=disabled" >> sentry.properties
+          echo "auth.token=disabled" >> sentry.properties
 
       - name: Create .env file and Run Fastlane
         env:
