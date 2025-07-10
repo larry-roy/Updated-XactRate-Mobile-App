@@ -220,9 +220,9 @@ function App() {
           component={Inventory_Screen}
           options={{
             headerShown: true,
-            title: 'Inventory',              // ← Yahan screen title set karen
-            headerBackTitle: 'Go Back',     // ← Yahan back button label
-            headerBackTitleVisible: true,   // ← Ensure label is visible
+            title: 'Inventory',              
+            headerBackTitle: 'Go Back',     
+            headerBackTitleVisible: true,   
           }}
         />
         <Stack.Screen
