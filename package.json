@@ -22,7 +22,6 @@
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
     "@rneui/base": "github:react-native-elements/react-native-elements#base",
-    "@sentry/react-native": "^5.3.0",
     "axios": "^1.4.0",
     "boost": "^0.63.1",
     "deprecated-react-native-prop-types": "^5.0.0",

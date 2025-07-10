@@ -38,13 +38,13 @@ jobs:
       - name: Install Cocoapods
         run: cd ios && pod install
 
-      - name: Set SENTRY_PROPERTIES env
-        run: echo "SENTRY_PROPERTIES=ios/sentry.properties" >> $GITHUB_ENV
+      # - name: Set SENTRY_PROPERTIES env
+      #   run: echo "SENTRY_PROPERTIES=ios/sentry.properties" >> $GITHUB_ENV
 
-      - name: Check sentry.properties
-        run: |
-          ls -la ios/sentry.properties
-          cat ios/sentry.properties
+      # - name: Check sentry.properties
+      #   run: |
+      #     ls -la ios/sentry.properties
+      #     cat ios/sentry.properties
       
       - name: Setup SSH for Match
         run: |
@@ -64,17 +64,17 @@ jobs:
           security set-keychain-settings -t 3600 -l "$KEYCHAIN_NAME"
           echo "KEYCHAIN_PASSWORD=$KEYCHAIN_PASSWORD" >> $GITHUB_ENV
 
-      - name: Disable Sentry for CI
-        run: |
-          echo "# Sentry disabled for CI builds" > sentry.properties
-          echo "defaults.url=https://sentry.io/" >> sentry.properties
-          echo "defaults.org=disabled" >> sentry.properties
-          echo "defaults.project=disabled" >> sentry.properties
-          echo "auth.token=disabled" >> sentry.properties
+      # - name: Disable Sentry for CI
+      #   run: |
+      #     echo "# Sentry disabled for CI builds" > sentry.properties
+      #     echo "defaults.url=https://sentry.io/" >> sentry.properties
+      #     echo "defaults.org=disabled" >> sentry.properties
+      #     echo "defaults.project=disabled" >> sentry.properties
+      #     echo "auth.token=disabled" >> sentry.properties
 
       - name: Create .env file and Run Fastlane
         env:
-          SENTRY_DISABLE: true
+          # SENTRY_DISABLE: true
         run: |
           cat > ios/fastlane/.env <<EOF
           APP_STORE_CONNECT_API_KEY_ID=${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
