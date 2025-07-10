@@ -429,7 +429,7 @@ PODS:
     - React-Core
   - RNExitApp (1.1.0):
     - React
-  - RNGestureHandler (2.24.0):
+  - RNGestureHandler (2.27.1):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
   - RNReanimated (2.17.0):
@@ -459,7 +459,7 @@ PODS:
     - React-RCTText
     - ReactCommon/turbomodule/core
     - Yoga
-  - RNScreens (3.37.0):
+  - RNScreens (4.11.1):
     - RCT-Folly (= 2021.07.22.00)
     - React-Core
     - React-RCTImage
@@ -710,9 +710,9 @@ SPEC CHECKSUMS:
   RNCPicker: 124b4fb5859ba1a3fd53a91e16d1e7a0fc016e59
   RNDateTimePicker: b43e41f10305dde521c0ab1370d7454979ec4287
   RNExitApp: 890cce29b4e01372c84b3b775f9a63f90d77de19
-  RNGestureHandler: ea1e2b6e796d766e36bcdd1e5e1cc6713661b089
+  RNGestureHandler: c2065517a0a36bba1ec1ed42c0a1ec78526f75d7
   RNReanimated: f9f8945aad05d259324869fb79ce30b75c6062da
-  RNScreens: c1a851e518284641160aa5af4894479773a6e719
+  RNScreens: bf6397aa344d1385af32efcf0396c937e72bb7e3
   RNSVG: d7cb8bd34550cf4c4fc7edd7ac627905e2b71f3f
   SocketRocket: f32cd54efbe0f095c4d7594881e52619cfe80b17
   Yoga: d4f5b037672e6b68ba484c7cf7fe6790122df792
