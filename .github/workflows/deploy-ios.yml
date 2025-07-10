@@ -64,6 +64,7 @@ jobs:
           security set-keychain-settings -t 3600 -l "$KEYCHAIN_NAME"
           echo "KEYCHAIN_PASSWORD=$KEYCHAIN_PASSWORD" >> $GITHUB_ENV
 
+
       # - name: Disable Sentry for CI
       #   run: |
       #     echo "# Sentry disabled for CI builds" > sentry.properties
