@@ -45,7 +45,7 @@ platform :ios do
         "PROVISIONING_PROFILE_SPECIFIER" => "match AppStore #{ENV["BUNDLE_IDENTIFIER"]}",
         "build_system" => "new",
         "COMPILER_INDEX_STORE_ENABLE" => "NO",
-        "SENTRY_DISABLE" => "true"
+        "ENABLE_USER_SCRIPT_SANDBOXING" => "NO"
       },
 
       # The `export_options` are still needed for the `export` step
