@@ -74,7 +74,7 @@ jobs:
 
       - name: Create .env file and Run Fastlane
         env:
-          # SENTRY_DISABLE: true
+          SENTRY_DISABLE: true
         run: |
           cat > ios/fastlane/.env <<EOF
           APP_STORE_CONNECT_API_KEY_ID=${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
