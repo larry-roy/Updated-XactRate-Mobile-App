@@ -38,13 +38,13 @@ jobs:
       - name: Install Cocoapods
         run: cd ios && pod install
 
-      # - name: Set SENTRY_PROPERTIES env
-      #   run: echo "SENTRY_PROPERTIES=ios/sentry.properties" >> $GITHUB_ENV
+      - name: Set SENTRY_PROPERTIES env
+        run: echo "SENTRY_PROPERTIES=ios/sentry.properties" >> $GITHUB_ENV
 
-      # - name: Check sentry.properties
-      #   run: |
-      #     ls -la ios/sentry.properties
-      #     cat ios/sentry.properties
+      - name: Check sentry.properties
+        run: |
+          ls -la ios/sentry.properties
+          cat ios/sentry.properties
       
       - name: Setup SSH for Match
         run: |
